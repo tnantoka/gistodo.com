@@ -1,0 +1,98 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gistodo</title>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Asap:400,700">
+  <link rel="stylesheet" href="vendor/bootstrap-3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/font-awesome-4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Gistodo</h1>
+    <p class="lead">Task lists synced with <a href="https://gist.github.com/">Gists</a>.</p>
+  </header>
+
+  <div class="row">
+    <div class="col-sm-5 col-vcenter">
+      <p>
+        <img src="assets/app.png" class="img-responsive img-thumbnail">
+      </p>
+    </div><!--
+    --><div class="col-sm-2 col-vcenter">
+      <p class="text-muted">
+        <span class="hidden-xs"><i class="fa fa-random fa-4x"></i></span>
+        <span class="visible-xs"><i class="fa fa-random fa-4x fa-rotate-90"></i></span>
+      </p>
+    </div><!--
+    --><div class="col-sm-5 col-vcenter">
+      <p>
+        <img src="assets/web.png" class="img-responsive img-thumbnail">
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <p class="appstore">
+        <img src="vendor/Download_on_the_App_Store_Badge_US-UK_135x40.svg">
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2 col-sm-offset-4">
+      <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+    </div>
+    <div class="col-sm-2">
+      <p>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <small>&copy; 2014 <a href="https://twitter.com/tnantoka">tnantoka</a></small>
+    </p>
+  </footer>
+</div>
+
+
+<script src="vendor/jquery-1.11.1.min.js"></script>
+<script src="vendor/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script src="assets/script.js"></script>
+
+{% if site.safe %}
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1400595396897261&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55938270-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+{% endif %}
+
+</body>
+</html>
